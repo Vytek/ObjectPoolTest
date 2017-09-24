@@ -55,7 +55,7 @@ public class GameObjectPooler : MonoBehaviour {
 		return gameObject;
 	}
 
-	private void AddToObjectPool(GameObject gameObject, string nameOfPrefab) {
+	public void AddToObjectPool(GameObject gameObject, string nameOfPrefab) {
 		if(this.ObjectPool.ContainsKey(nameOfPrefab)) {
 			this.AddObjectToExistingPool(gameObject, nameOfPrefab);
 		}
